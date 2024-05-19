@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+}
+main{
+    background-color: rgb(0, 255, 204);;
+    height: 100vh;
+}
+.msg-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(141, 141, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.container{
+    background-color: rgb(0, 255, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%vw;
+    height: 80%;
+    flex-direction: column;
+}
+.para{
+    font-size: 2rem;
+}
+.game{
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    height: 28%;
+    width: 28%;
+    margin-right: 4%;
+    font-size: 30px;
+    background-color: gold;
+    border: 2px solid rgb(88, 20, 20);
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    box-shadow: 12px 12px 2px 1px rgba(108, 43, 8, 0.2);
+}
+.box:active{
+    background-color: rgb(191, 124, 43);
+}
+.new-btn{
+
+    border: 5px solid;
+        border-color: #ccc #999 #666 #999;
+        background-color: #fff;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 10px;      
+}
+.new-btn:hover{
+    background-color: #c6b8b8;
+}
+.hide{
+    display: none;
+}
+.reset{
+    background-color: rgb(27, 59, 59);
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset-btn{
+        border: 5px solid;
+        border-color: #ccc #999 #666 #999;
+        background-color: #fff;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 10px;   
+        font-size: medium;   
+}
+#reset-btn:hover{
+    background-color: #b98a8a;
+    border-color: #bb9f9f #9b8585 #624545 #5c2f2f;
+}
+@media only screen and (max-width: 600px) {
+    .container p {
+        font-size: 6vw;
+    }
+
+        .box {
+          height: 20vw;
+          font-size: 10vw;
+        }
+
+    .new-btn,
+    #reset-btn {
+        width: 30vw;
+        height: 15vw;
+        font-size: 5vw;
+    }
+    .reset{
+        background-color: rgb(27, 59, 59);
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      .game{
+        width: 80%;
+        height: 40%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
